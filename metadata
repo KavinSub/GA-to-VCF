@@ -1,0 +1,228 @@
+{
+    "data": [
+        {
+            "description": "Confidence interval around END for imprecise variants", 
+            "type": "Integer", 
+            "id": "CIEND", 
+            "key": "INFO", 
+            "number": "2"
+        }, 
+        {
+            "description": "Confidence interval around POS for imprecise variants", 
+            "type": "Integer", 
+            "id": "CIPOS", 
+            "key": "INFO", 
+            "number": "2"
+        }, 
+        {
+            "description": "Source call set.", 
+            "type": "String", 
+            "id": "CS", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "End coordinate of this variant", 
+            "type": "Integer", 
+            "id": "END", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Imprecise structural variation", 
+            "type": "Flag", 
+            "id": "IMPRECISE", 
+            "key": "INFO", 
+            "number": "0"
+        }, 
+        {
+            "description": "Merged calls.", 
+            "type": "String", 
+            "id": "MC", 
+            "key": "INFO", 
+            "number": "."
+        }, 
+        {
+            "description": "Mobile element info of the form NAME,START,END<POLARITY; If there is only 5' OR 3' support for this call, will be NULL NULL for START and END", 
+            "type": "String", 
+            "id": "MEINFO", 
+            "key": "INFO", 
+            "number": "4"
+        }, 
+        {
+            "description": "Mitochondrial end coordinate of inserted sequence", 
+            "type": "Integer", 
+            "id": "MEND", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Estimated length of mitochondrial insert", 
+            "type": "Integer", 
+            "id": "MLEN", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Mitochondrial start coordinate of inserted sequence", 
+            "type": "Integer", 
+            "id": "MSTART", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Difference in length between REF and ALT alleles", 
+            "type": "Integer", 
+            "id": "SVLEN", 
+            "key": "INFO", 
+            "number": "."
+        }, 
+        {
+            "description": "Type of structural variant", 
+            "type": "String", 
+            "id": "SVTYPE", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Precise Target Site Duplication for bases, if unknown, value will be NULL", 
+            "type": "String", 
+            "id": "TSD", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Total number of alternate alleles in called genotypes", 
+            "type": "Integer", 
+            "id": "AC", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Estimated allele frequency in the range (0,1)", 
+            "type": "Float", 
+            "id": "AF", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Number of samples with data", 
+            "type": "Integer", 
+            "id": "NS", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Total number of alleles in called genotypes", 
+            "type": "Integer", 
+            "id": "AN", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Allele frequency in the EAS populations calculated from AC and AN, in the range (0,1)", 
+            "type": "Float", 
+            "id": "EAS_AF", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Allele frequency in the EUR populations calculated from AC and AN, in the range (0,1)", 
+            "type": "Float", 
+            "id": "EUR_AF", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Allele frequency in the AFR populations calculated from AC and AN, in the range (0,1)", 
+            "type": "Float", 
+            "id": "AFR_AF", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Allele frequency in the AMR populations calculated from AC and AN, in the range (0,1)", 
+            "type": "Float", 
+            "id": "AMR_AF", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Allele frequency in the SAS populations calculated from AC and AN, in the range (0,1)", 
+            "type": "Float", 
+            "id": "SAS_AF", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Total read depth", 
+            "type": "Integer", 
+            "id": "DP", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Ancestral Allele. Format: AA|REF|ALT|IndelType. AA: Ancestral allele, REF:Reference Allele, ALT:Alternate Allele, IndelType:Type of Indel (REF, ALT and IndelType are only defined for indels)", 
+            "type": "String", 
+            "id": "AA", 
+            "key": "INFO", 
+            "number": "1"
+        }, 
+        {
+            "description": "Consequence type as predicted by VEP WITH -PICK_ALLELE parameter. Format: Allele|Gene|Feature|Feature_type|Consequence|cDNA_position|CDS_position|Protein_position|Amino_acids|Codons|Existing_variation|DISTANCE|STRAND|SIFT|PolyPhen|MOTIF_NAME|MOTIF_POS|HIGH_INF_POS|MOTIF_SCORE_CHANGE", 
+            "type": "String", 
+            "id": "CSQ", 
+            "key": "INFO", 
+            "number": "."
+        }, 
+        {
+            "description": "The annotation of coding variants and splice site variants", 
+            "type": "String", 
+            "id": "GENCODE", 
+            "key": "INFO", 
+            "number": "."
+        }, 
+        {
+            "description": "The Annotation Of Loss-of-Function Transcripts, provides extensive functional annotations to loss-of-function variants in the human genome, https://github.com/gersteinlab/aloft", 
+            "type": "String", 
+            "id": "ALOFT", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Predicted as phosphorylation sites by Phosphosite.org. Format: Uniprot Identifier of phosphorylated protein|Position in Uniprot sequence of phosphorylation site|Number of low throughput experiments this site has been seen in|Number of high throughput experiments this site has been seen in", 
+            "type": "String", 
+            "id": "PHOSPHORYLATION", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "Ensembl Regulatory Build. Format: Allele|Gene|Feature|Feature_type|Consequence", 
+            "type": "String", 
+            "id": "ERB", 
+            "key": "INFO", 
+            "number": "."
+        }, 
+        {
+            "description": "The Super population with the higher derived allele frequency for the highD site", 
+            "type": "String", 
+            "id": "HighD", 
+            "key": "INFO", 
+            "number": "."
+        }, 
+        {
+            "description": "FunSeq score for noncoding SNV", 
+            "type": "Float", 
+            "id": "FUNSEQ", 
+            "key": "INFO", 
+            "number": "A"
+        }, 
+        {
+            "description": "All filters passed", 
+            "type": "String", 
+            "id": "PASS", 
+            "key": "FILTER", 
+            "number": "1"
+        }
+    ]
+}

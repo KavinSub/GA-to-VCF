@@ -1,0 +1,5 @@
+keys.*
+*.pyc
+/env
+test
+reference
