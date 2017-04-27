@@ -18,7 +18,6 @@ if __name__ == '__main__':
 	for data in variant_set.metadata:
 		if '.' in data.key:
 			key, identity = (str(x) for x in data.key.split('.'))
-			print(key, identity)
 			metadata['data'].append({
 				'key': key,
 				'id': identity,
@@ -27,7 +26,37 @@ if __name__ == '__main__':
 				'description': data.description
 			})
 
-	# [4] Write metadata to file
+	# [4] Write hardcoded metadata tags not on server
+	metadata['data'].append({
+		'key': 'FORMAT',
+		'id': 'GT',
+		'number': 1,
+		'type': 'String',
+		'description': 'Genotype'
+	})
+	metadata['data'].append({
+		'key': 'FORMAT',
+		'id': 'GQ',
+		'number': 1,
+		'type': 'Integer',
+		'description': 'Genotype Quality'
+	})
+	metadata['data'].append({
+		'key': 'FORMAT',
+		'id': 'DP',
+		'number': 1,
+		'type': 'Integer',
+		'description': 'Read Depth'
+	})
+	metadata['data'].append({
+		'key': 'FORMAT',
+		'id': 'HQ',
+		'number': 2,
+		'type': 'Integer',
+		'description': 'Haplotype Quality'
+	})
+
+	# [5] Write metadata to file
 	filename = "metadata"
 	with open(filename, 'w') as f:
 		json.dump(metadata, f, indent=4)

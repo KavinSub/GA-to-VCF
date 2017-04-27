@@ -1,5 +1,5 @@
-keys.*
 *.pyc
 /env
 test
 reference
+variants
