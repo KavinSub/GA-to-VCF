@@ -1,5 +1,6 @@
 *.pyc
 /env
-test
+test*
 reference
 variants
+*.vcf

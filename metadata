@@ -230,27 +230,6 @@
             "id": "GT", 
             "key": "FORMAT", 
             "number": 1
-        }, 
-        {
-            "description": "Genotype Quality", 
-            "type": "Integer", 
-            "id": "GQ", 
-            "key": "FORMAT", 
-            "number": 1
-        }, 
-        {
-            "description": "Read Depth", 
-            "type": "Integer", 
-            "id": "DP", 
-            "key": "FORMAT", 
-            "number": 1
-        }, 
-        {
-            "description": "Haplotype Quality", 
-            "type": "Integer", 
-            "id": "HQ", 
-            "key": "FORMAT", 
-            "number": 2
         }
     ]
 }

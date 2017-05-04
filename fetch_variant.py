@@ -7,6 +7,10 @@ def get_value(value):
 	elif value.int64_value != 0: return value.int64_value
 	else: return value.double_value
 
+# TODO:
+# 1. Get quality data
+# 2. Determine why POS field differs
+
 if __name__ == '__main__':
 	# Data that will be dumped into file
 	data = {}
@@ -20,7 +24,7 @@ if __name__ == '__main__':
 		if variant_set.name == "phase3-release":
 			var_set = variant_set
 
-	# [3] Fetch 1 callset
+	# [3] Fetch max_count number of callsets
 	call_set_ids = []
 	call_set_names = []
 	count = 0

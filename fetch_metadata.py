@@ -1,6 +1,10 @@
 import json
 from ga4gh.client import client
 
+# TODO:
+# 1. Missing Info Tags: VT, EX_TARGET, MULTI_ALLELIC
+# 2. Check for contig and ALT tags
+
 if __name__ == '__main__':
 	# [1] Boilerplate code to initialize GA4GH client
 	c = client.HttpClient("http://1kgenomes.ga4gh.org")
@@ -34,27 +38,27 @@ if __name__ == '__main__':
 		'type': 'String',
 		'description': 'Genotype'
 	})
-	metadata['data'].append({
-		'key': 'FORMAT',
-		'id': 'GQ',
-		'number': 1,
-		'type': 'Integer',
-		'description': 'Genotype Quality'
-	})
-	metadata['data'].append({
-		'key': 'FORMAT',
-		'id': 'DP',
-		'number': 1,
-		'type': 'Integer',
-		'description': 'Read Depth'
-	})
-	metadata['data'].append({
-		'key': 'FORMAT',
-		'id': 'HQ',
-		'number': 2,
-		'type': 'Integer',
-		'description': 'Haplotype Quality'
-	})
+	# metadata['data'].append({
+	# 	'key': 'FORMAT',
+	# 	'id': 'GQ',
+	# 	'number': 1,
+	# 	'type': 'Integer',
+	# 	'description': 'Genotype Quality'
+	# })
+	# metadata['data'].append({
+	# 	'key': 'FORMAT',
+	# 	'id': 'DP',
+	# 	'number': 1,
+	# 	'type': 'Integer',
+	# 	'description': 'Read Depth'
+	# })
+	# metadata['data'].append({
+	# 	'key': 'FORMAT',
+	# 	'id': 'HQ',
+	# 	'number': 2,
+	# 	'type': 'Integer',
+	# 	'description': 'Haplotype Quality'
+	# })
 
 	# [5] Write metadata to file
 	filename = "metadata"

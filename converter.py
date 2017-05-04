@@ -3,22 +3,17 @@ import json
 
 # TODO:
 # 1. Get source, reference and phasing
-# 2. Add error catching as needed
-# 3. Get quality data
-# 4. Check api for format tags
-# 5. Check api for other filter tags
-# 6. Ensure that all other tags have been retrieved
 
 def write_header(file, key, value):
 	file.write("##{}={}\n".format(key, value))
 
 ### CONSTANTS
-filename = "test"
+filename = "test.vcf"
 version = "VCFv4.1"
 filedate = time.strftime("%Y%m%d")
-source = "1kGenomes"
-reference = "NULL"
-phasing = "NULL"
+source = "1000GenomesPhase3Pipeline"
+reference = "1000GenomesPilot-NCBI37"
+phasing = "complete"
 
 metafile = "metadata"
 variantfile = "variants"
