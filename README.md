@@ -15,8 +15,8 @@ How to use:
 Todo:
 1. Currently the source, reference and phasing fields are hardcoded strings.
 2. The metadata is missing the following information
-  1.INFO tags: VT, EX_TARGET, MULTI_ALLELIC
-  2. contig tags
-  3. ALT tags
+⋅⋅1.INFO tags: VT, EX_TARGET, MULTI_ALLELIC
+⋅⋅2. contig tags
+⋅⋅3. ALT tags
 3. The quality data is missing from the variants. Currently this is hardcoded to 100.
 4. The POS field in the original VCF differs from the outputted POS field. This may just be due to using a different reference.
