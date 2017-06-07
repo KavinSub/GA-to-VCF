@@ -1,9 +1,6 @@
 import time
 import json
 
-# TODO:
-# 1. Get source, reference and phasing
-
 def write_header(file, key, value):
 	file.write("##{}={}\n".format(key, value))
 

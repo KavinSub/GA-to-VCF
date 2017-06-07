@@ -38,27 +38,6 @@ if __name__ == '__main__':
 		'type': 'String',
 		'description': 'Genotype'
 	})
-	# metadata['data'].append({
-	# 	'key': 'FORMAT',
-	# 	'id': 'GQ',
-	# 	'number': 1,
-	# 	'type': 'Integer',
-	# 	'description': 'Genotype Quality'
-	# })
-	# metadata['data'].append({
-	# 	'key': 'FORMAT',
-	# 	'id': 'DP',
-	# 	'number': 1,
-	# 	'type': 'Integer',
-	# 	'description': 'Read Depth'
-	# })
-	# metadata['data'].append({
-	# 	'key': 'FORMAT',
-	# 	'id': 'HQ',
-	# 	'number': 2,
-	# 	'type': 'Integer',
-	# 	'description': 'Haplotype Quality'
-	# })
 
 	# [5] Write metadata to file
 	filename = "metadata"

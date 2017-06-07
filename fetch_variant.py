@@ -40,9 +40,10 @@ if __name__ == '__main__':
 	# [4] Fetch variant data
 	count = 0
 	variants = []
-	start_pos = 10000
-	end_pos = 11000
-	for variant in c.search_variants(call_set_ids=call_set_ids, variant_set_id=var_set.id, reference_name="1", start=start_pos, end=end_pos):
+	start_pos = 1
+	end_pos = 20000
+	reference_name = "1"
+	for variant in c.search_variants(call_set_ids=call_set_ids, variant_set_id=var_set.id, reference_name=reference_name, start=start_pos, end=end_pos):
 		item = {}
 		variants.append(item)
 		item["CHROM"] = variant.reference_name
