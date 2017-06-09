@@ -1,11 +1,8 @@
 import json
 from ga4gh.client import client
 
-# TODO:
-# 1. Missing Info Tags: VT, EX_TARGET, MULTI_ALLELIC
-# 2. Check for contig and ALT tags
-
 if __name__ == '__main__':
+	
 	# [1] Boilerplate code to initialize GA4GH client
 	c = client.HttpClient("http://1kgenomes.ga4gh.org")
 	dataset = c.search_datasets().next()

@@ -7,10 +7,6 @@ def get_value(value):
 	elif value.int64_value != 0: return value.int64_value
 	else: return value.double_value
 
-# TODO:
-# 1. Get quality data
-# 2. Determine why POS field differs
-
 if __name__ == '__main__':
 	# Data that will be dumped into file
 	data = {}
@@ -47,11 +43,11 @@ if __name__ == '__main__':
 		item = {}
 		variants.append(item)
 		item["CHROM"] = variant.reference_name
-		item["POS"] = variant.start
+		item["POS"] = variant.start + 1
 		item["ID"] = ";".join([str(x) for x in variant.names])
 		item["REF"] = variant.reference_bases
 		item["ALT"] = ",".join([str(x) for x in variant.alternate_bases])
-		item["QUAL"] = "."
+		item["QUAL"] = "100"
 		item["FILTER"] = "PASS"
 		item["INFO"] = ";".join(["{}={}".format(key, get_value(value.values[0])) for key, value in variant.attributes.attr.items()])
 		item["FORMAT"] = "GT"
